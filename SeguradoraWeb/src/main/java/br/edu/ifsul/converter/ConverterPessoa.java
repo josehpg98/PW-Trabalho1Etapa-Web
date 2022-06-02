@@ -25,7 +25,7 @@ public class ConverterPessoa implements Serializable, Converter{
     @PersistenceContext(unitName = "SeguradoraWebPU")
     private EntityManager em;
     
-    // da tela para o objeto
+    //tela para o objeto
     @Override
     public Object getAsObject(FacesContext fc, UIComponent uic, String string) {
         if (string == null || string.equals("Selecione um registro")){
